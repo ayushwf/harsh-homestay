@@ -5,283 +5,467 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Harsh Sooryavanshi Home Stay and Hotel, Ayodhya</title>
 <meta name="description" content="Clean, comfortable and affordable rooms on Gorakhpur Road, Ayodhya, close to Shri Ram Mandir and Ayodhya Airport. Book on WhatsApp: +91 79053 31813.">
-<meta name="theme-color" content="#F59A23">
+<meta name="theme-color" content="#5B1A18">
 <meta property="og:title" content="Harsh Sooryavanshi Home Stay and Hotel, Ayodhya">
 <meta property="og:description" content="Your peaceful stay near Shri Ram Mandir">
 <meta property="og:image" content="photo1.jpg">
+<link rel="preload" as="image" href="photo1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&family=Rozha+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@400;500;600&display=swap">
+<script>document.documentElement.classList.add('js')</script>
 <!--
   QUICK EDIT GUIDE: press Ctrl+F and search for "EDIT"
-  EDIT: ROOM PRICES   replace ₹____ with your price
+  EDIT: ROOM PRICES   change "Best rates on WhatsApp" if you want to show a price
+  EDIT: ROOM ICONS    remove any icon a room does not have
   EDIT: FACILITIES    add, change or remove facilities
+  EDIT: DISTANCES     distances are estimates, correct them here
   EDIT: GALLERY       add more photos
   EDIT: GOOGLE LINK   paste your exact Google Maps link
+  EDIT: MAP           paste your exact Google Maps embed link
 -->
 <style>
-/* Layout: saffron panel beside a full-height hotel photo, then calm white bands; saffron returns at contact */
+/* Layout: night photo hero, then airy cream sections; maroon returns for distances and footer */
 :root{
   color-scheme:light;
-  --saffron:#F59A23; --saffron-deep:#B34A00; --gold:#C8962E; --gold-pale:#FFF3D9;
-  --white:#fff; --maroon:#4A0F12; --text:#5B3A34; --line:#EBD9B4; --wa:#0E7A40;
-  --display:"Rozha One","Noto Serif Devanagari",Georgia,serif;
-  --body:"Mukta","Nirmala UI",system-ui,sans-serif;
+  --maroon:#5B1A18; --maroon-dark:#2E0B0B; --saffron:#E8871E; --saffron-ink:#A4530A;
+  --gold:#C9A227; --gold-soft:#E9D9A3; --cream:#FBF6EE; --card:#FFFDF9; --text:#5A4843;
+  --wa:#0F7A43;
+  --display:"Cormorant Garamond",Georgia,serif;
+  --body:"Poppins","Nirmala UI",system-ui,sans-serif;
+  --r:22px;
+  --shadow:0 18px 50px -18px rgba(91,26,24,.22);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{margin:0;background:var(--white);color:var(--text);font:400 1.125rem/1.65 var(--body)}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--text);font:400 1rem/1.75 var(--body);overflow-x:clip}
+body.locked{overflow:hidden}
 img{display:block;max-width:100%;height:auto}
-h1,h2,h3,p,ul{margin:0}
-h1,h2{font-family:var(--display);font-weight:400;color:var(--maroon);text-wrap:balance}
-h2{font-size:clamp(2rem,5vw,3rem);line-height:1.15}
-h3{font-size:1.35rem;line-height:1.3;color:var(--maroon)}
-a{color:var(--saffron-deep)}
-:focus-visible{outline:3px solid var(--maroon);outline-offset:3px}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-.band{padding-block:clamp(56px,9vw,104px)}
-.pale{background:var(--gold-pale)}
-.head{display:grid;gap:8px;max-width:62ch;margin-bottom:36px}
-.hindi{font-size:1.2rem;font-weight:600;color:var(--saffron-deep)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:10px 26px;border-radius:6px;font-weight:700;line-height:1.2;text-decoration:none;transition:filter .2s}
-.btn:hover{filter:brightness(1.12)}
-.btn svg,.float svg{width:24px;height:24px;fill:currentColor;flex:none}
+h1,h2,h3,p,ul,dl,dd{margin:0}
+ul{list-style:none;padding:0}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3{font-family:var(--display);font-weight:600;color:var(--maroon);text-wrap:balance;font-variant-numeric:lining-nums}
+h2{font-size:clamp(2.5rem,5.2vw,4rem);line-height:1.06;letter-spacing:-.01em}
+h3{font-size:1.7rem;line-height:1.15}
+svg.i{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+svg.wa{width:22px;height:22px;flex:none;fill:currentColor}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.section{padding-block:clamp(76px,10vw,140px)}
+.head{display:grid;gap:12px;max-width:600px;margin-bottom:clamp(36px,5vw,60px)}
+.hindi{font-weight:500;color:var(--saffron-ink)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:12px 30px;border-radius:999px;font-weight:500;line-height:1.2;text-decoration:none;transition:transform .25s,box-shadow .25s,background-color .25s,color .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 28px -10px rgba(46,11,11,.45)}
+.btn:active{transform:none}
+.btn-saffron{background:var(--saffron);color:var(--maroon-dark)}
+.btn-saffron:hover{background:#F29A38}
+.btn-maroon{background:var(--maroon);color:#fff}
+.btn-maroon:hover{background:#742522}
 .btn-wa{background:var(--wa);color:#fff}
-.btn-dark{background:var(--maroon);color:#fff}
-.btn-line{border:2px solid var(--maroon);color:var(--maroon)}
+.btn-wa:hover{background:#0B673A}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--maroon)}
+.btn-line{border:1.5px solid var(--maroon);color:var(--maroon)}
+.btn-line:hover{background:var(--maroon);color:#fff}
 .actions{display:flex;flex-wrap:wrap;gap:14px}
 
-.top{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:2px solid var(--gold)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
-.brand{font:400 1.3rem/1.15 var(--display);color:var(--maroon);text-decoration:none}
-.nav{display:flex;gap:26px}
-.nav a{color:var(--maroon);text-decoration:none;font-weight:600;padding:8px 0}
-.nav a:hover{color:var(--saffron-deep)}
-.menu{display:none;border:0;background:none;font:700 1.05rem var(--body);color:var(--maroon);min-height:48px;padding:0 4px;cursor:pointer}
+/* Navbar */
+.top{position:fixed;inset:0 0 auto;z-index:40;color:#fff;transition:background-color .35s,box-shadow .35s,color .35s}
+.top.solid{background:var(--cream);color:var(--maroon);box-shadow:0 6px 30px -10px rgba(91,26,24,.25)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.brand{font:600 1.65rem/1.1 var(--display);color:inherit;text-decoration:none}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{color:inherit;text-decoration:none;font-size:.95rem;font-weight:500;padding:8px 0;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 2px no-repeat;transition:background-size .3s}
+.nav a:hover{background-size:100% 2px}
+.burger{display:none;position:relative;z-index:2;width:48px;height:48px;margin-right:-10px;border:0;background:none;padding:0}
+.burger i{position:absolute;left:11px;right:11px;height:2px;border-radius:2px;background:currentColor;transition:transform .3s,opacity .2s,top .3s}
+.burger i:nth-child(1){top:16px}.burger i:nth-child(2){top:23px}.burger i:nth-child(3){top:30px}
+.scrim{display:none}
 
-.hero{display:grid;grid-template-columns:1fr 1fr;background:var(--saffron)}
-.hero-text{display:grid;align-content:center;gap:22px;padding:56px clamp(24px,4vw,64px) 56px max(20px,calc((100vw - 1160px)/2))}
-.greet{font-size:1.5rem;font-weight:600;color:var(--maroon)}
-.hero h1{font-size:clamp(2.5rem,4.7vw,4.4rem);line-height:1.04}
-.hero h1 span{display:block;font-size:.55em;line-height:1.25;margin-top:.2em}
-.tag{font-size:1.4rem;line-height:1.4;font-weight:500;color:var(--maroon)}
-.rating{font-weight:600;color:var(--maroon)}
-.hero-img{width:100%;height:100%;min-height:560px;max-height:780px;object-fit:cover;object-position:50% 70%}
+/* Hero */
+.hero{position:relative;isolation:isolate;display:flex;flex-direction:column;min-height:max(660px,100vh);min-height:max(660px,100svh);background:var(--maroon-dark);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-60px;z-index:-3;background:url(photo1.jpg) 50% 40%/cover;filter:blur(28px)}
+.hero>img{position:absolute;inset:0 0 0 auto;width:66%;height:100%;object-fit:cover;object-position:50% 45%;z-index:-2;-webkit-mask-image:linear-gradient(90deg,transparent,#000 40%);mask-image:linear-gradient(90deg,transparent,#000 40%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(30,6,6,.95) 0%,rgba(30,6,6,.84) 40%,rgba(30,6,6,.12) 72%),linear-gradient(0deg,rgba(30,6,6,.9),transparent 38%),linear-gradient(180deg,rgba(30,6,6,.75),transparent 24%)}
+.hero-main{flex:1;display:grid;align-content:center;justify-items:start;gap:22px;padding-block:110px 48px}
+.greet{font-size:1.15rem;font-weight:500;color:var(--gold-soft)}
+.hero h1{color:#fff;max-width:6.2em;font-size:clamp(3rem,7.2vw,6.4rem);line-height:.96;letter-spacing:-.02em}
+.hero h1 span{display:block;font-size:.46em;line-height:1.15;letter-spacing:0;color:var(--gold-soft);font-weight:500;margin-top:.4em}
+.tag{font-size:clamp(1.05rem,1.6vw,1.3rem);color:#FBEFE0}
+.hero .actions{margin-top:8px}
+.bar{background:rgba(30,6,6,.82);border-top:1px solid rgba(233,217,163,.35)}
+.bar ul{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between;gap:24px;padding-block:24px}
+.bar li{display:flex;align-items:center;gap:12px;font-weight:500}
+.bar .i{color:var(--gold)}
 
-.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center}
-.about>div{display:grid;gap:18px}
-/* temple-window arch */
-.arch{border-radius:50% 50% 0 0/38% 38% 0 0;border:6px solid var(--gold);width:100%;aspect-ratio:4/4.4;object-fit:cover}
-.places{list-style:none;padding:0;border-top:1px solid var(--line)}
-.places li{padding:12px 0;border-bottom:1px solid var(--line);color:var(--maroon);font-weight:600}
+/* About */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(56px,8vw,120px);align-items:center}
+.framed{position:relative;margin:0 22px 22px 0}
+.framed::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:2px solid var(--gold);border-radius:var(--r)}
+.framed img{position:relative;width:100%;aspect-ratio:1/1.1;object-fit:cover;object-position:42% 50%;border-radius:var(--r);box-shadow:var(--shadow)}
+.about-text{display:grid;gap:20px}
+.ticks{display:grid;gap:12px;margin-top:8px}
+.ticks li{display:flex;gap:12px;color:var(--maroon);font-weight:500}
+.ticks .i{color:var(--saffron-ink)}
 
-.rooms{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.room{background:var(--white);border:1px solid var(--line);display:flex;flex-direction:column}
-.room img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.room-body{display:grid;gap:12px;padding:26px;flex:1;align-content:space-between;justify-items:start}
-.price b{font-size:1.5rem;color:var(--saffron-deep)}
+/* Rooms */
+.rooms{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.5vw,44px)}
+.room{display:flex;flex-direction:column;background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.zoom{overflow:hidden}
+.zoom img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .7s}
+.room:hover .zoom img{transform:scale(1.05)}
+.room-body{display:grid;gap:18px;padding:clamp(24px,3vw,38px);flex:1}
+.amen{display:flex;flex-wrap:wrap;gap:10px 22px;padding-bottom:20px;border-bottom:1px solid #EFE4CF}
+.amen li{display:flex;align-items:center;gap:8px;font-size:.92rem}
+.amen .i{width:20px;height:20px;color:var(--saffron-ink)}
+.buy{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.price{line-height:1.4;font-size:.92rem}
+.price b{font-size:1.05rem;font-weight:600;color:var(--maroon)}
 
-.facts{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px}
-.facts li{padding:22px 0;border-top:2px solid var(--gold)}
-.facts p{line-height:1.5}
+/* Facilities */
+.white{background:var(--card)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:52px 40px}
+.facts li{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+.circle{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--maroon-dark);box-shadow:0 0 0 6px rgba(201,162,39,.16);transition:transform .3s}
+.circle .i{width:29px;height:29px}
+.facts li:hover .circle{transform:scale(1.08)}
+.facts p{font-size:.94rem;line-height:1.5;margin-top:4px}
 
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.gallery button{border:0;padding:0;background:none;cursor:zoom-in;overflow:hidden}
-.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .4s}
-.gallery button:hover img{transform:scale(1.03)}
-dialog{border:0;padding:0;background:none;max-width:94vw;max-height:94vh}
-dialog::backdrop{background:rgba(40,6,8,.9)}
-dialog img{max-width:94vw;max-height:82vh}
-dialog button{font:700 1rem var(--body);min-height:48px;padding:0 22px;border:0;background:#fff;color:var(--maroon);cursor:pointer;margin-bottom:10px}
+/* Distances */
+.distance{background:var(--maroon);color:#F3E1D3}
+.distance h2{color:#fff}
+.distance .hindi{color:var(--gold-soft)}
+.distance .wrap{display:grid;grid-template-columns:1fr 1.35fr;gap:clamp(40px,7vw,100px);align-items:center}
+.distance .head{margin:0}
+.km div{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid rgba(233,217,163,.25)}
+.km div:last-child{border:0}
+.km dt{font-size:1.08rem}
+.km dd{font:600 2rem/1 var(--display);color:var(--gold-soft);white-space:nowrap;font-variant-numeric:lining-nums}
 
-.review{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,64px);align-items:center}
-.score{font:400 clamp(5rem,13vw,9rem)/1 var(--display);color:var(--saffron-deep)}
-.review>div{display:grid;gap:16px;justify-items:start}
-.map{display:block;width:100%;height:440px;border:0;background:var(--line)}
-.mapnote{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;margin-bottom:24px}
-address{font-style:normal;max-width:52ch}
-.contact{background:var(--saffron);color:var(--maroon)}
-.contact .wrap{display:grid;gap:22px;justify-items:start}
-.phone{font:400 clamp(2rem,7vw,3.6rem)/1.1 var(--display);color:var(--maroon);text-decoration:none}
-footer{background:var(--maroon);color:#FBE6BF;padding-block:30px 100px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between}
+.km dd small{font:400 .85rem var(--body);margin-right:6px}
 
-.float{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));z-index:30;display:flex;align-items:center;gap:10px;min-height:58px;padding:0 22px;border-radius:30px;background:var(--wa);color:#fff;border:2px solid #fff;font-weight:700;text-decoration:none;box-shadow:0 6px 20px rgba(74,15,18,.3)}
-.float svg{width:30px;height:30px}
+/* Gallery */
+.gallery{display:grid;grid-template-columns:1.15fr 1fr 1fr;grid-auto-rows:310px;gap:18px}
+.gallery button{border:0;padding:0;background:none;border-radius:var(--r);overflow:hidden;cursor:zoom-in;position:relative;transform:translateZ(0)}
+.gallery button::after{content:"";position:absolute;inset:0;background:rgba(46,11,11,.25);opacity:0;transition:opacity .4s}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.gallery button:hover img{transform:scale(1.07)}
+.gallery button:hover::after{opacity:1}
+.gallery .tall{grid-row:span 2}
+.gallery .wide{grid-column:span 2}
+.box{border:0;padding:0;width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;background:#1E0606;color:#fff}
+.box[open]{display:grid;place-items:center}
+.box::backdrop{background:none}
+.box img{max-width:calc(100vw - 32px);max-height:calc(100vh - 170px);border-radius:14px}
+.box button{position:absolute;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(46,11,11,.7);display:grid;place-items:center;padding:0;transition:background-color .2s}
+.box button:hover{background:var(--maroon)}
+.box .close{top:18px;right:18px}
+.box .prev{bottom:22px;left:calc(50% - 64px)}
+.box .next{bottom:22px;left:calc(50% + 12px)}
 
-@media(max-width:820px){
-  .menu{display:block}
-  .nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 20px 16px;border-bottom:2px solid var(--gold)}
-  .nav.open{display:flex}
-  .nav a{padding:12px 0}
-  .hero,.about,.rooms{grid-template-columns:1fr}
-  .hero-img{order:-1;min-height:0;height:auto;aspect-ratio:1/.92}
-  .hero-text{padding:32px 20px 48px;gap:16px}
-  .facts{grid-template-columns:1fr 1fr;gap:0 24px}
+/* Reviews */
+.review{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:clamp(24px,5vw,64px);background:var(--card);border-radius:calc(var(--r) + 8px);box-shadow:var(--shadow);padding:clamp(32px,5vw,64px)}
+.score{font:600 clamp(5rem,9vw,7.5rem)/.85 var(--display);color:var(--maroon);font-variant-numeric:lining-nums;white-space:nowrap}
+.score span{color:var(--gold);font-size:.6em;vertical-align:.18em;margin-left:.08em}
+.review h2{font-size:clamp(2rem,3.4vw,2.8rem);margin-block:4px 8px}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1.15fr 1fr;background:var(--card);border-radius:calc(var(--r) + 8px);overflow:hidden;box-shadow:var(--shadow)}
+.map{display:block;width:100%;height:100%;min-height:380px;border:0;background:#EFE7D8}
+.contact-text{display:grid;align-content:center;gap:20px;padding:clamp(28px,5vw,68px)}
+.contact-text h2{font-size:clamp(2.3rem,4vw,3.2rem)}
+address{font-style:normal}
+.phone{font:600 clamp(1.9rem,3.4vw,2.6rem)/1.1 var(--display);color:var(--maroon);text-decoration:none;font-variant-numeric:lining-nums;white-space:nowrap}
+.stack{display:grid;gap:12px}
+.stack .btn{min-height:62px;font-size:1.08rem}
+.dir{color:var(--saffron-ink);font-weight:500;text-underline-offset:4px;justify-self:start}
+
+/* Footer */
+footer{background:var(--maroon);color:#EBD6C8;padding-block:72px 32px}
+.foot{display:grid;grid-template-columns:1.5fr 1.4fr 1fr;gap:48px}
+.foot>*{display:grid;gap:12px;align-content:start}
+.foot .brand{color:#fff;font-size:2rem}
+footer a{color:inherit;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+footer h3{color:var(--gold-soft);font-size:1.4rem}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:4px 20px}
+.links a{display:inline-block;padding:4px 0}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;margin-top:52px;padding:26px 84px 0 0;border-top:1px solid rgba(233,217,163,.25);font-size:.9rem}
+
+/* Floating WhatsApp */
+.float{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:30;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--wa);color:#fff;box-shadow:0 10px 28px -6px rgba(0,0,0,.45);transition:transform .25s}
+.float:hover{transform:scale(1.08)}
+.float svg{width:34px;height:34px}
+.float::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--wa);z-index:-1;animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.5}75%,100%{transform:scale(1.65);opacity:0}}
+
+/* Fade-up (only when JavaScript is running) */
+.js .up{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .up.in{opacity:1;transform:none}
+
+@media(max-width:1380px){.bar ul{padding-right:84px}}
+@media(max-width:960px){
+  .burger{display:block}
+  .nav{position:fixed;inset:0 0 0 auto;width:min(320px,84vw);flex-direction:column;align-items:stretch;gap:0;padding:96px 32px 32px;background:var(--cream);color:var(--maroon);box-shadow:-20px 0 60px rgba(46,11,11,.3);overflow-y:auto;visibility:hidden;transform:translateX(100%);transition:transform .4s cubic-bezier(.2,.7,.2,1),visibility .4s}
+  .nav a{font:600 1.7rem/1.2 var(--display);padding:12px 0;border-bottom:1px solid #EFE4CF}
+  .scrim{display:block;position:fixed;inset:0;background:rgba(30,6,6,.6);opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+  .open .nav{visibility:visible;transform:none}
+  .open .scrim{opacity:1;visibility:visible}
+  .open .burger{color:var(--maroon)}
+  .open .burger i:nth-child(1){top:23px;transform:rotate(45deg)}
+  .open .burger i:nth-child(2){opacity:0}
+  .open .burger i:nth-child(3){top:23px;transform:rotate(-45deg)}
+  .hero::before{display:none}
+  .hero>img{width:100%;height:56%;object-position:72% 20%;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent)}
+  .hero::after{background:linear-gradient(0deg,#2E0B0B 40%,rgba(46,11,11,.9) 60%,rgba(46,11,11,.45) 70%,rgba(46,11,11,.05) 80%),linear-gradient(180deg,rgba(30,6,6,.7),transparent 18%)}
+  .hero-main{align-content:end}
+  .about,.distance .wrap,.contact{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  .review{grid-template-columns:auto 1fr}
+  .review .btn{grid-column:1/-1;justify-self:start}
+  .gallery{grid-auto-rows:240px}
 }
-@media(max-width:560px){
-  .brand{font-size:1.1rem}
-  .facts,.review{grid-template-columns:1fr}
-  .gallery{gap:8px}
-  .actions,.actions .btn{width:100%}
-  .map{height:360px}
-  .float{padding:0;width:62px;height:62px;justify-content:center}
-  .float span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:700px){
+  .top .wrap{min-height:66px}
+  .brand{font-size:1.45rem}
+  .tag{font-size:1rem}
+  .amen{gap:10px 14px}
+  .amen li{font-size:.84rem;gap:6px}
+  .amen .i{width:17px;height:17px}
+  .stack .btn{padding-inline:14px;font-size:1rem}
+  .hero-main{align-content:end;gap:14px;padding-block:90px 28px}
+  .hero .actions,.hero .btn{width:100%}
+  .bar ul{grid-template-columns:1fr;gap:8px;padding-block:18px 22px}
+  .bar li{font-size:.95rem}
+  .rooms{grid-template-columns:1fr}
+  .buy .btn{width:100%}
+  .framed{margin:0 14px 14px 0}
+  .framed::before{inset:14px -14px -14px 14px}
+  .facts{grid-template-columns:1fr;gap:30px}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:10px}
+  .gallery .tall{grid-column:span 2}
+  .gallery button{border-radius:16px}
+  .review{grid-template-columns:1fr}
+  .review .btn{width:100%}
+  .foot{grid-template-columns:1fr;gap:36px}
+  .map{min-height:300px}
+  .km dt{line-height:1.4}
 }
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .js .up{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200Zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.500-.7-2.500-1.300-3.500-3-.3-.4.200-.4.700-1.300.1-.2 0-.3 0-.4l-.8-1.900c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.8.9-1 1.700-.9 2.500.2 1.600 1.300 3 2.700 4.300 2 1.800 3.600 2.300 4.800 2.100 1-.1 1.900-.8 2.100-1.500.2-.6.2-1 .1-1.100l-.6-.2Z"/></symbol>
+  <symbol id="temple" viewBox="0 0 24 24"><path d="M12 1v3M12 4c-3 2.500-4.500 5.500-5 9h10c-.5-3.500-2-6.500-5-9ZM5 13h14v8H5zM3 21h18M10 21v-3.500a2 2 0 0 1 4 0V21"/></symbol>
+  <symbol id="plane" viewBox="0 0 24 24"><path d="M21 15v-2l-7.500-5V3.500a1.500 1.500 0 0 0-3 0V8L3 13v2l7.500-2.300V18L8 19.800V21l4-1 4 1v-1.200L13.500 18v-5.300z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="m12 3 2.700 5.800 6.300.8-4.600 4.300 1.200 6.200L12 17l-5.600 3.100 1.200-6.200L3 9.600l6.300-.8z"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
+  <symbol id="ac" viewBox="0 0 24 24"><path d="M12 2v20M3.300 7l17.400 10M20.700 7 3.300 17M9.500 3.500 12 6l2.500-2.500M9.500 20.500 12 18l2.500 2.500"/></symbol>
+  <symbol id="fan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M12 10c-3-2-3-7 0-7s4 4 1.700 6M13.800 13c3.200-1.500 7.200 1.500 5.700 4s-5.500 1-5.800-2M10.300 13c-.3 3.500-4.800 5.600-6.200 3s1.700-5.500 4.500-4.300"/></symbol>
+  <symbol id="wifi" viewBox="0 0 24 24"><path d="M2.500 9a14 14 0 0 1 19 0M5.500 12.500a9.500 9.500 0 0 1 13 0M8.700 16a5 5 0 0 1 6.600 0M12 19.500h.01"/></symbol>
+  <symbol id="water" viewBox="0 0 24 24"><path d="M3 14h18v2a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5zM8 10c-1.500-1.500 1.500-3 0-5M12 10c-1.500-1.500 1.500-3 0-5M16 10c-1.500-1.500 1.500-3 0-5"/></symbol>
+  <symbol id="tv" viewBox="0 0 24 24"><rect x="2.500" y="4.500" width="19" height="13" rx="2"/><path d="M8 21h8"/></symbol>
+  <symbol id="bed" viewBox="0 0 24 24"><path d="M3 5v15M3 17h18v3M21 17v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="12.500" r="2"/></symbol>
+  <symbol id="car" viewBox="0 0 24 24"><path d="m4 11 2-5h12l2 5M3 11h18v6H3zM5 17v2.500M19 17v2.500M6.500 14h1.500M16 14h1.500"/></symbol>
+  <symbol id="staff" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.5-4.500 3.500-7 8-7s7.500 2.500 8 7M10.500 9c.8.8 2.200.8 3 0"/></symbol>
+  <symbol id="call" viewBox="0 0 24 24"><path d="M6.500 3h3l1.500 5-2.200 1.500a12 12 0 0 0 5.700 5.700L16 13l5 1.500v3A3.500 3.500 0 0 1 17.500 21 14.500 14.500 0 0 1 3 6.500 3.500 3.500 0 0 1 6.500 3Z"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+  <symbol id="right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
 </svg>
 
-<header class="top">
+<header class="top" id="top">
+  <div class="scrim"></div>
   <div class="wrap">
     <a class="brand" href="#home">Harsh Sooryavanshi</a>
-    <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
     <nav class="nav" id="nav">
       <a href="#about">About</a><a href="#rooms">Rooms</a><a href="#facilities">Facilities</a>
-      <a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#map">Location</a><a href="#contact">Contact</a>
+      <a href="#distance">Distances</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-  <div class="hero-text">
+  <img src="photo1.jpg" width="823" height="839" alt="Sooryavanshi Home Stay and Hotel building lit up at night" fetchpriority="high">
+  <div class="wrap hero-main">
     <p class="greet" lang="hi">जय श्री राम</p>
     <h1>Harsh Sooryavanshi <span>Home Stay and Hotel, Ayodhya</span></h1>
     <p class="tag">Your peaceful stay near Shri Ram Mandir</p>
     <div class="actions">
-      <a class="btn btn-wa" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Book on WhatsApp</a>
-      <a class="btn btn-line" href="tel:+917905331813">Call us</a>
+      <a class="btn btn-saffron" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room." target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#wa"/></svg>Book on WhatsApp</a>
+      <a class="btn btn-ghost" href="#rooms">View Rooms</a>
     </div>
-    <p class="rating">★ 4.7 rated on Google</p>
   </div>
-  <img class="hero-img" src="photo1.jpg" width="823" height="839" alt="Sooryavanshi Home Stay and Hotel building lit up at night" fetchpriority="high">
+  <div class="bar">
+    <ul class="wrap">
+      <li><svg class="i" aria-hidden="true"><use href="#temple"/></svg>Near Shri Ram Mandir</li>
+      <li><svg class="i" aria-hidden="true"><use href="#plane"/></svg>Near Ayodhya Airport</li>
+      <li><svg class="i" aria-hidden="true"><use href="#star"/></svg>4.7★ on Google</li>
+    </ul>
+  </div>
 </section>
 
-<section class="band" id="about">
+<section class="section" id="about">
   <div class="wrap about">
-    <div>
+    <div class="framed up"><img src="photo3.jpg" width="1095" height="821" loading="lazy" alt="Lounge with a chandelier, sofa and glass doors"></div>
+    <div class="about-text up">
       <p class="hindi" lang="hi">अतिथि देवो भव</p>
       <h2>A warm welcome on your Ayodhya yatra</h2>
       <p>Whether you have come for Ram Lalla's darshan, a family trip or work, we offer clean, comfortable rooms at affordable prices. Our friendly staff are here to make you feel at home.</p>
       <p>We are right on the highway, so we are easy to find and easy to reach.</p>
-      <ul class="places">
-        <li>Close to Shri Ram Mandir</li>
-        <li>Close to Ayodhya Airport</li>
-        <li>On the highway, at Janaura bypass, Gorakhpur Road</li>
-        <li>Well connected to the city centre</li>
+      <ul class="ticks">
+        <li><svg class="i" aria-hidden="true"><use href="#check"/></svg>Close to Shri Ram Mandir</li>
+        <li><svg class="i" aria-hidden="true"><use href="#check"/></svg>Close to Ayodhya Airport</li>
+        <li><svg class="i" aria-hidden="true"><use href="#check"/></svg>On the highway, at Janaura bypass, Gorakhpur Road</li>
+        <li><svg class="i" aria-hidden="true"><use href="#check"/></svg>Well connected to the city centre</li>
       </ul>
     </div>
-    <img class="arch" src="photo3.jpg" width="1095" height="821" loading="lazy" alt="Lounge with a chandelier, sofa and glass doors">
   </div>
 </section>
 
-<section class="band pale" id="rooms">
+<section class="section white" id="rooms">
   <div class="wrap">
-    <div class="head">
+    <div class="head up">
       <p class="hindi" lang="hi">हमारे कमरे</p>
       <h2>Rooms</h2>
       <p>Message us your dates and number of guests, and we will tell you what is available.</p>
     </div>
-    <!-- EDIT: ROOM PRICES. Replace ₹____ and check that each photo matches its room type. -->
+    <!-- EDIT: ROOM PRICES. Change "Best rates on WhatsApp" if you want to show a price, and check that each photo matches its room type. -->
     <div class="rooms">
-      <article class="room">
-        <img src="photo4.jpg" width="987" height="751" loading="lazy" alt="Room with a double bed, shelves and a sofa">
+      <article class="room up">
+        <div class="zoom"><img src="photo4.jpg" width="987" height="751" loading="lazy" alt="Room with a double bed, shelves and a sofa"></div>
         <div class="room-body">
           <h3>AC Room</h3>
           <p>A clean, comfortable air-conditioned room.</p>
-          <p class="price">Starting from <b>₹____</b>/night</p>
-          <a class="btn btn-dark" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room.%20(AC%20Room)" target="_blank" rel="noopener">Ask for AC Room</a>
+          <!-- EDIT: ROOM ICONS. Delete any <li> this room does not have. -->
+          <ul class="amen">
+            <li><svg class="i" aria-hidden="true"><use href="#ac"/></svg>AC</li>
+            <li><svg class="i" aria-hidden="true"><use href="#wifi"/></svg>WiFi</li>
+            <li><svg class="i" aria-hidden="true"><use href="#water"/></svg>Hot water</li>
+            <li><svg class="i" aria-hidden="true"><use href="#tv"/></svg>TV</li>
+          </ul>
+          <div class="buy">
+            <p class="price"><b>Best rates on WhatsApp</b></p>
+            <a class="btn btn-maroon" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room.%20Room%3A%20AC%20Room" target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#wa"/></svg>Book this room</a>
+          </div>
         </div>
       </article>
-      <article class="room">
-        <img src="photo2.jpg" width="1113" height="816" loading="lazy" alt="Room with a large bed, padded headboard and side tables">
+      <article class="room up">
+        <div class="zoom"><img src="photo2.jpg" width="1113" height="816" loading="lazy" alt="Room with a large bed, padded headboard and side tables"></div>
         <div class="room-body">
           <h3>Non-AC Room</h3>
-          <p>A clean, comfortable room at a lower price.</p>
-          <p class="price">Starting from <b>₹____</b>/night</p>
-          <a class="btn btn-dark" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room.%20(Non-AC%20Room)" target="_blank" rel="noopener">Ask for Non-AC Room</a>
+          <p>A clean, comfortable room with a fan.</p>
+          <!-- EDIT: ROOM ICONS. Delete any <li> this room does not have. -->
+          <ul class="amen">
+            <li><svg class="i" aria-hidden="true"><use href="#fan"/></svg>Fan</li>
+            <li><svg class="i" aria-hidden="true"><use href="#wifi"/></svg>WiFi</li>
+            <li><svg class="i" aria-hidden="true"><use href="#water"/></svg>Hot water</li>
+            <li><svg class="i" aria-hidden="true"><use href="#tv"/></svg>TV</li>
+          </ul>
+          <div class="buy">
+            <p class="price"><b>Best rates on WhatsApp</b></p>
+            <a class="btn btn-maroon" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room.%20Room%3A%20Non-AC%20Room" target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#wa"/></svg>Book this room</a>
+          </div>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="band" id="facilities">
+<section class="section" id="facilities">
   <div class="wrap">
-    <div class="head">
+    <div class="head up">
       <p class="hindi" lang="hi">सुविधाएँ</p>
       <h2>Facilities</h2>
     </div>
     <!-- EDIT: FACILITIES. Each <li>...</li> is one facility. Copy one to add, delete one to remove. -->
     <ul class="facts">
-      <li><h3>Clean rooms</h3><p>Neat rooms and comfortable beds</p></li>
-      <li><h3>Hot water</h3><p>For a fresh start before darshan</p></li>
-      <li><h3>Parking</h3><p>Space for your vehicle</p></li>
-      <li><h3>Near the temple</h3><p>Close to Shri Ram Mandir</p></li>
-      <li><h3>Near the airport</h3><p>Close to Ayodhya Airport</p></li>
-      <li><h3>Friendly staff</h3><p>Happy to help during your stay</p></li>
+      <li class="up"><span class="circle"><svg class="i" aria-hidden="true"><use href="#bed"/></svg></span><div><h3>Clean rooms</h3><p>Neat rooms and comfortable beds</p></div></li>
+      <li class="up"><span class="circle"><svg class="i" aria-hidden="true"><use href="#water"/></svg></span><div><h3>Hot water</h3><p>For a fresh start before darshan</p></div></li>
+      <li class="up"><span class="circle"><svg class="i" aria-hidden="true"><use href="#car"/></svg></span><div><h3>Parking</h3><p>Space for your vehicle</p></div></li>
+      <li class="up"><span class="circle"><svg class="i" aria-hidden="true"><use href="#temple"/></svg></span><div><h3>Near the temple</h3><p>Close to Shri Ram Mandir</p></div></li>
+      <li class="up"><span class="circle"><svg class="i" aria-hidden="true"><use href="#plane"/></svg></span><div><h3>Near the airport</h3><p>Close to Ayodhya Airport</p></div></li>
+      <li class="up"><span class="circle"><svg class="i" aria-hidden="true"><use href="#staff"/></svg></span><div><h3>Friendly staff</h3><p>Happy to help during your stay</p></div></li>
     </ul>
     <!-- END FACILITIES -->
   </div>
 </section>
 
-<section class="band pale" id="gallery">
+<section class="section distance" id="distance">
   <div class="wrap">
-    <div class="head">
+    <div class="head up">
+      <p class="hindi" lang="hi">होटल से दूरी</p>
+      <h2>Distance from Hotel</h2>
+      <p>Right on Gorakhpur Road, with the main places of your yatra within easy reach.</p>
+    </div>
+    <!-- EDIT: DISTANCES. These are estimated road distances. Correct any that are wrong. -->
+    <dl class="km up">
+      <div><dt>Shri Ram Mandir</dt><dd><small>approx.</small> ~7.5 km</dd></div>
+      <div><dt>Hanuman Garhi</dt><dd><small>approx.</small> ~8 km</dd></div>
+      <div><dt>Ayodhya Airport</dt><dd><small>approx.</small> ~4 km</dd></div>
+      <div><dt>Ayodhya Dham railway station</dt><dd><small>approx.</small> ~7 km</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="head up">
       <p class="hindi" lang="hi">तस्वीरें</p>
       <h2>Gallery</h2>
     </div>
-    <!-- EDIT: GALLERY. To add a photo, put photo5.jpg in this folder, copy one line below and change the file name. -->
-    <div class="gallery">
-      <button type="button"><img src="photo1.jpg" loading="lazy" alt="Hotel building at night"></button>
+    <!-- EDIT: GALLERY. To add a photo, put photo5.jpg in this folder, copy one <button> line and change the file name.
+         class="tall" makes it taller, class="wide" makes it wider, no class is normal size. -->
+    <div class="gallery up">
+      <button type="button" class="tall"><img src="photo1.jpg" loading="lazy" alt="Hotel building at night"></button>
+      <button type="button" class="wide"><img src="photo3.jpg" loading="lazy" alt="Lounge with a chandelier"></button>
       <button type="button"><img src="photo2.jpg" loading="lazy" alt="Room with a large bed"></button>
-      <button type="button"><img src="photo3.jpg" loading="lazy" alt="Lounge with a chandelier"></button>
       <button type="button"><img src="photo4.jpg" loading="lazy" alt="Room with a double bed and sofa"></button>
     </div>
   </div>
 </section>
 
-<section class="band" id="reviews">
-  <div class="wrap review">
-    <p class="score" aria-label="4.7 stars">4.7★</p>
-    <div>
-      <p class="hindi" lang="hi">मेहमानों की राय</p>
-      <h2>Rated 4.7 on Google</h2>
-      <p>See what our guests say in their own words.</p>
+<section id="reviews">
+  <div class="wrap">
+    <div class="review up">
+      <p class="score" aria-hidden="true">4.7<span>★</span></p>
+      <div>
+        <p class="hindi" lang="hi">मेहमानों की राय</p>
+        <h2>4.7★ rated on Google</h2>
+        <p>See what our guests say in their own words.</p>
+      </div>
       <!-- EDIT: GOOGLE LINK. Paste your exact Google Maps "Share" link in href below. -->
-      <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Harsh%20Sooryavanshi%20Home%20Stay%20and%20Hotel%2C%20Ayodhya" target="_blank" rel="noopener">Read our reviews on Google</a>
+      <a class="btn btn-line" href="https://www.google.com/maps/place/?q=place_id:ChIJ26H7DqkJmjkRL0QMrdSkmyo" target="_blank" rel="noopener">Read reviews on Google</a>
     </div>
   </div>
 </section>
 
-<section class="band pale" id="map">
+<section class="section" id="contact">
   <div class="wrap">
-    <div class="head" style="margin-bottom:16px">
-      <p class="hindi" lang="hi">यहाँ पहुँचें</p>
-      <h2>Find us</h2>
-    </div>
-    <div class="mapnote">
-      <address>Janaura bypass, Gorakhpur Road, Krishna Nagar, Durgapuri Colony, Karaundia, Ayodhya, Uttar Pradesh 224001</address>
-      <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&amp;destination=Harsh%20Sooryavanshi%20Home%20Stay%20and%20Hotel%2C%20Janaura%20bypass%2C%20Gorakhpur%20Road%2C%20Ayodhya%20224001" target="_blank" rel="noopener">Get directions</a>
-    </div>
-    <iframe class="map" title="Map showing Harsh Sooryavanshi Home Stay and Hotel" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps?q=Janaura%20bypass%2C%20Gorakhpur%20Road%2C%20Krishna%20Nagar%2C%20Durgapuri%20Colony%2C%20Karaundia%2C%20Ayodhya%2C%20Uttar%20Pradesh%20224001&amp;z=15&amp;output=embed"></iframe>
-  </div>
-</section>
-
-<section class="band contact" id="contact">
-  <div class="wrap">
-    <h2><span lang="hi">आपका स्वागत है</span></h2>
-    <p>Call or message us to book your room.</p>
-    <a class="phone" href="tel:+917905331813">+91 79053 31813</a>
-    <div class="actions">
-      <a class="btn btn-dark" href="tel:+917905331813">Call now</a>
-      <a class="btn btn-wa" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Message on WhatsApp</a>
+    <div class="contact up">
+      <!-- EDIT: MAP. On your Google Maps listing choose Share > Embed a map, copy the src="..." value and paste it in place of the src below. -->
+      <iframe class="map" title="Map showing Harsh Sooryavanshi Home Stay and Hotel" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps?q=26.7609721,82.1544092&amp;z=16&amp;output=embed"></iframe>
+      <div class="contact-text">
+        <p class="hindi" lang="hi">आपका स्वागत है</p>
+        <h2>Call or message us to book</h2>
+        <address>Janaura bypass, Gorakhpur Road, Krishna Nagar, Durgapuri Colony, Karaundia, Ayodhya, Uttar Pradesh 224001</address>
+        <a class="dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=26.7609721,82.1544092" target="_blank" rel="noopener">Get directions</a>
+        <a class="phone" href="tel:+917905331813">+91 79053 31813</a>
+        <div class="stack">
+          <a class="btn btn-maroon" href="tel:+917905331813"><svg class="i" aria-hidden="true"><use href="#call"/></svg>Call now</a>
+          <a class="btn btn-wa" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room." target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#wa"/></svg>Message on WhatsApp</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -289,38 +473,93 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-betw
 
 <footer>
   <div class="wrap">
-    <p>© <span id="year">2026</span> Harsh Sooryavanshi Home Stay and Hotel, Ayodhya</p>
-    <p lang="hi">जय सिया राम</p>
+    <div class="foot">
+      <div>
+        <a class="brand" href="#home">Harsh Sooryavanshi</a>
+        <p>Home Stay and Hotel, Ayodhya</p>
+        <p lang="hi">जय सिया राम</p>
+      </div>
+      <div>
+        <h3>Visit us</h3>
+        <p>Janaura bypass, Gorakhpur Road, Krishna Nagar, Durgapuri Colony, Karaundia, Ayodhya, Uttar Pradesh 224001</p>
+        <a href="tel:+917905331813">+91 79053 31813</a>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="links">
+          <li><a href="#about">About</a></li><li><a href="#rooms">Rooms</a></li>
+          <li><a href="#facilities">Facilities</a></li><li><a href="#distance">Distances</a></li>
+          <li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal"><p>© 2026 Harsh Sooryavanshi Home Stay and Hotel</p></div>
   </div>
 </footer>
 
-<a class="float" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg><span>Book on WhatsApp</span></a>
+<a class="float" aria-label="Book on WhatsApp" href="https://wa.me/917905331813?text=Namaste%2C%20I%20want%20to%20book%20a%20room." target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#wa"/></svg></a>
 
-<dialog id="viewer" aria-label="Photo viewer"><button type="button">Close</button><img alt=""></dialog>
+<dialog class="box" id="box" aria-label="Photo viewer">
+  <img alt="">
+  <button type="button" class="close" aria-label="Close"><svg class="i" aria-hidden="true"><use href="#x"/></svg></button>
+  <button type="button" class="prev" aria-label="Previous photo"><svg class="i" aria-hidden="true"><use href="#left"/></svg></button>
+  <button type="button" class="next" aria-label="Next photo"><svg class="i" aria-hidden="true"><use href="#right"/></svg></button>
+</dialog>
 
 <script>
 (function () {
-  document.getElementById('year').textContent = new Date().getFullYear();
+  // Navbar
+  var top = document.getElementById('top'), burger = top.querySelector('.burger');
+  function onScroll() { top.classList.toggle('solid', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
-  var menu = document.querySelector('.menu'), nav = document.getElementById('nav');
   function setMenu(open) {
-    nav.classList.toggle('open', open);
-    menu.setAttribute('aria-expanded', open);
-    menu.textContent = open ? 'Close' : 'Menu';
+    top.classList.toggle('open', open);
+    document.body.classList.toggle('locked', open);
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   }
-  menu.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
-  nav.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  burger.addEventListener('click', function () { setMenu(!top.classList.contains('open')); });
+  top.querySelector('.scrim').addEventListener('click', function () { setMenu(false); });
+  document.getElementById('nav').addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  window.matchMedia('(min-width:961px)').addEventListener('change', function () { setMenu(false); });
 
-  var viewer = document.getElementById('viewer'), big = viewer.querySelector('img');
-  document.querySelector('.gallery').addEventListener('click', function (e) {
-    var b = e.target.closest('button');
-    if (!b) return;
-    var img = b.querySelector('img');
-    big.src = img.src;
-    big.alt = img.alt;
-    viewer.showModal();
+  // Lightbox
+  var box = document.getElementById('box'), big = box.querySelector('img'), at = 0;
+  var photos = [].slice.call(document.querySelectorAll('.gallery img'));
+  function show(n) {
+    at = (n + photos.length) % photos.length;
+    big.src = photos[at].src;
+    big.alt = photos[at].alt;
+  }
+  photos.forEach(function (img, n) {
+    img.parentNode.addEventListener('click', function () { show(n); box.showModal(); document.body.classList.add('locked'); });
   });
-  viewer.addEventListener('click', function (e) { if (e.target !== big) viewer.close(); });
+  box.querySelector('.prev').addEventListener('click', function () { show(at - 1); });
+  box.querySelector('.next').addEventListener('click', function () { show(at + 1); });
+  box.querySelector('.close').addEventListener('click', function () { box.close(); });
+  box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+  box.addEventListener('close', function () { document.body.classList.remove('locked'); });
+  box.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') show(at - 1);
+    if (e.key === 'ArrowRight') show(at + 1);
+  });
+
+  // Fade-up
+  var ups = document.querySelectorAll('.up');
+  if (!('IntersectionObserver' in window)) {
+    ups.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  ups.forEach(function (el) { io.observe(el); });
 })();
 </script>
 </body>
